@@ -1,0 +1,18 @@
+general.import = [
+ "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+[window]
+opacity = 0.98
+decorations = "Full"
+decorations_theme_variant = "Dark"
+
+[font]
+normal.family = "Maple Mono NF"
+bold.family = "Maple Mono NF"
+italic.family = "Maple Mono NF"
+bold_italic.family = "Maple Mono NF ExtraBold"
+
+size = 16.0
+
+
