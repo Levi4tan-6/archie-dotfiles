@@ -2,7 +2,6 @@ return {
   {
     "yetone/avante.nvim",
     event = "VeryLazy",
-    lazy = false,
     version = false, -- Set this to "*" to always pull the latest release version, or false to update on release
     opts = {
       provider = "openrouter",

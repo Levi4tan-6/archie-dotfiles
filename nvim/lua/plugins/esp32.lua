@@ -2,6 +2,7 @@ return {
   {
     "akinsho/toggleterm.nvim",
     version = "*",
+    event = "VeryLazy",
     opts = {
       size = 20,
       open_mapping = [[<c-\>]], -- Ctrl + \ para abrir/cerrar terminal general
@@ -26,6 +27,11 @@ return {
           vim.api.nvim_buf_set_keymap(term.bufnr, "t", "q", "<cmd>close<CR>", { noremap = true, silent = true })
         end,
       })
+
+      -- Global toggle for the mapping below
+      _G.esp_monitor_toggle = function()
+        esp_monitor:toggle()
+      end
 
       -- 3. Mapeos Profesionales (Líder es Espacio)
       local map = vim.keymap.set
